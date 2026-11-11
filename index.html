@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>这啥网站</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    text-align: center;
+    color: #333;
+    position: relative; 
+    animation: fadeIn 1.5s ease-out;
+    
+    border: 3px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+        linear-gradient(45deg, #ff9a9e 0%, #fecfef 50%, #a18cd1 100%);
+        }
+
+        h1 { margin-top: 0; font-size: 2em; color: #222;}
+        p { font-size: 1.1em; color: #444;}
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-    <h1>欢迎人以及任何生物！</h1>
-    <p>什么都有。</p >
+
+    <div class="card">
+        <h1>欢迎人以及任何生物！</h1>
+        <p>什么都有</p >
+    </div>
+
 </body>
 </html>
