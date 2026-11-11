@@ -42,12 +42,33 @@
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        .title-box {
+    display: flex;             /* 让里面的东西并排显示 */
+    justify-content: center;   /* 整体居中 */
+    align-items: center;       /* 上下对齐 */
+    gap: 15px;                 /* 图片和文字之间的空隙 */
+    margin-bottom: 20px;       /* 和下方内容的距离 */
+}
+
+.title-box h1 {
+    margin: 0;                 /* 去掉标题原本自带的上下边距 */
+}
+
+.title-img {
+    width: 60px;               /* 图片的宽度，你可以随便改数字 */
+    height: 60px;              /* 图片的高度 */
+    object-fit: cover;         /* 保证图片不被拉伸变形 */
+    border-radius: 10px;       /* 图片加个小圆角，如果喜欢正圆形可以改成 50% */
+}
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1>欢迎人以及任何生物！</h1>
+        <div class="title-box">
+    <img src="IMG_3452.jpeg" class="title-img" alt="我的画">
+    <h1>欢迎人以及任何生物！</h1>
+</div>
         <p>什么都有</p >
         <img src="952.png" style="width: 100%; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
     </div>
